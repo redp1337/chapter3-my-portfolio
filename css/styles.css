@@ -1,31 +1,39 @@
 html,body{
     font-family: 'Times New Roman', Times, serif;
     height: 100%;
+    color: #850a0a;
 }
 
 body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: antiquewhite;
 }
-h2{
+h1{
     text-align:center;
     letter-spacing: 3px;
+    font-size: 40px;
+    font-style: italic;
 }
-
+h2{
+    font-size: 25px;
+}
 header{
-    background-color: #3a0069;
-    color: white;
+    background-color: antiquewhite;
+
     text-align: center;
     padding: 15px;
 
 }
 header nav a{
-    color:white;
+    font-size: 18px;
+    color: #850a0a;
 }
 
 section{
     padding: 30px;
+    font-style:italic;
 }
 main{
     flex:1;
