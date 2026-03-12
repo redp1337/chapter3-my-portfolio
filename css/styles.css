@@ -18,6 +18,8 @@ h1{
 }
 h2{
     font-size: 25px;
+    color:#4a0e0e; 
+    /* darker grayish red */
 }
 header{
     background-color: antiquewhite;
@@ -29,11 +31,19 @@ header{
 header nav a{
     font-size: 18px;
     color: #850a0a;
+    list-style: none;
+    display: in-line;
+    text-decoration: none;
 }
 
+header nav a:hover{
+    text-decoration: underline;
+}
 section{
     padding: 30px;
     font-style:italic;
+    box-shadow: #850a0a;
+    border-radius: 10px;
 }
 main{
     flex:1;
@@ -43,4 +53,26 @@ footer{
     background-color:#3a0069;
     font-size: 18px;
     color: white;
+/* position: fixed; */
+/* bottom: 0;*/
+width: 100%;
+}
+
+@media screen {
+    body{
+        font-size: 16px;
+    }
+
+    header nav{
+        text-align:center; 
+        display: block;
+    }
+    section{
+        padding: 10px;
+    }
+
+    footer{
+        font-size: 12px;
+        padding: 10px;
+    }
 }
