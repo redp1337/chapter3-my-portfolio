@@ -1,6 +1,5 @@
 html,body{
     height: 100%;
-    color: #850a0a;
 }
 
 @font-face{
@@ -17,38 +16,40 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: antiquewhite;
+    background-color: rgb(255, 255, 255);
 }
 h1{
     text-align:center;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     font-size: 30px;
     font-family:"daydream";
     font-style: italic;
+    color: #850rgb(0, 0, 0)
 }
 h2{
     font-size: 25px;
-    color:#4a0e0e; 
+    color:#000000; 
     /* darker grayish red */
 }
 header{
-    background-color: antiquewhite;
+    background-color: rgb(251, 251, 251);
 
     text-align: center;
     padding: 15px;
 
 }
 header nav a{
-    font-size: 18px;
-    color: #850a0a;
+    font-size:10px;
+    color: #000000;
     list-style: none;
     display: in-line;
     text-decoration: none;
     padding: 5px;
+    font-family: 'daydream';
 }
 
 header nav a:hover{
-    text-decoration: underline;
+    color: orange;
 }
 section{
     padding: 30px;
