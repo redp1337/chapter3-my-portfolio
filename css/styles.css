@@ -1,17 +1,16 @@
 html,body{
-    font-family: 'Times New Roman', Times, serif;
     height: 100%;
     color: #850a0a;
 }
 
 @font-face{
-    font-family: daydream;
-    src: url(fonts/Daydream.otf);
+    font-family: 'daydream';
+    src: url(../fonts/Daydream.otf) format('opentype');
 }
 
 @font-face{
-    font-family: emoji;
-    src: url(fonts/EmojiFont.ttf);
+    font-family: 'emoji';
+    src: url(../fonts/EmojiFont.ttf) format('truetype');
 }
 
 body{
@@ -23,9 +22,9 @@ body{
 h1{
     text-align:center;
     letter-spacing: 3px;
-    font-size: 40px;
+    font-size: 30px;
+    font-family:"daydream";
     font-style: italic;
-    
 }
 h2{
     font-size: 25px;
