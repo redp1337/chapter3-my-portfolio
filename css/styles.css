@@ -12,6 +12,11 @@ html,body{
     src: url(../fonts/EmojiFont.ttf) format('truetype');
 }
 
+@font-face{
+    font-family: 'pixel';
+    src: url(../fonts/pixelmix.ttf) format('truetype');
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -20,15 +25,16 @@ body{
 }
 h1{
     text-align:center;
-    letter-spacing: 5px;
+    letter-spacing: 10px;
     font-size: 30px;
     font-family:"daydream";
     font-style: italic;
     color: #850rgb(0, 0, 0)
 }
 h2{
-    font-size: 25px;
+    font-size: 20px;
     color:#000000; 
+    font-family: 'daydream';
     /* darker grayish red */
 }
 header{
@@ -49,12 +55,12 @@ header nav a{
 }
 
 header nav a:hover{
-    color: orange;
+    color: rgb(68, 0, 255);
 }
 section{
     padding: 30px;
     font-style:italic;
-    box-shadow: #850a0a;
+    box-shadow: #0800ff;
     border-radius: 10px;
 }
 main{
@@ -89,4 +95,26 @@ font-style: italic;
         font-size: 12px;
         padding: 10px;
     }
+}
+
+.welcome-message{
+    font-family: 'daydream';
+    text-align: center;
+    width: 600px;
+}
+.welcome-message p{
+    font-family: 'daydream';
+    text-align: center;
+    font-size: 10px;
+    line-height: 40px;
+}
+
+#about{
+    border:#000000;
+    border-style:solid;
+    border-width: 1px; 
+    box-shadow: 10px 10px;
+}
+#about p{
+    font-family: 'pixel';
 }
