@@ -3,7 +3,10 @@ html,body{
     height: 100%;
     color: #850a0a;
 }
-
+@font-face{
+    font-family: daydream;
+    src: url(fonts/Daydream.otf);
+}
 body{
     display: flex;
     flex-direction: column;
@@ -15,6 +18,7 @@ h1{
     letter-spacing: 3px;
     font-size: 40px;
     font-style: italic;
+    
 }
 h2{
     font-size: 25px;
