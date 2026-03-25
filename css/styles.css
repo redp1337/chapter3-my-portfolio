@@ -35,7 +35,7 @@ h2{
     font-size: 20px;
     color:#000000; 
     font-family: 'daydream';
-    /* darker grayish red */
+    text-align:center;
 }
 header{
     background-color: rgb(251, 251, 251);
@@ -45,13 +45,13 @@ header{
 
 }
 header nav a{
-    font-size:10px;
+    font-size:15px;
     color: #000000;
     list-style: none;
     display: in-line;
     text-decoration: none;
     padding: 5px;
-    font-family: 'daydream';
+    font-family: 'pixel';
 }
 
 header nav a:hover{
@@ -100,21 +100,27 @@ font-style: italic;
 .welcome-message{
     font-family: 'daydream';
     text-align: center;
-    width: 600px;
-}
-.welcome-message p{
-    font-family: 'daydream';
-    text-align: center;
-    font-size: 10px;
-    line-height: 40px;
+
 }
 
-#about{
+
+#about, #projects, #contact{
     border:#000000;
     border-style:solid;
     border-width: 1px; 
     box-shadow: 10px 10px;
+
 }
-#about p{
+p{
     font-family: 'pixel';
+}
+
+#click-details{
+    font-family: 'pixel';
+    padding:4px;
+
+}
+
+#click-details:hover{
+    background-color: rgb(114, 114, 114);
 }
