@@ -3,10 +3,17 @@ html,body{
     height: 100%;
     color: #850a0a;
 }
+
 @font-face{
     font-family: daydream;
     src: url(fonts/Daydream.otf);
 }
+
+@font-face{
+    font-family: emoji;
+    src: url(fonts/EmojiFont.ttf);
+}
+
 body{
     display: flex;
     flex-direction: column;
