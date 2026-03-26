@@ -66,7 +66,7 @@ const typedEffect= new Typed("#typing-text-effect",{
         "while you're here, might as well take a look at my portfolio!",
         "check out some of my projects below!",
     ],
-    typeSpeed: 60,
+    typeSpeed: 80,
     backSpeed:30,
     showCursor:true,
     cursorChar: '|',
