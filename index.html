@@ -17,12 +17,12 @@
     </header>
     <main>
         <div class="welcome-message">
-            <h3>hi there!</h3>
+            <h3><span id="typing-text-effect"></span></h3>
         </div>
 
         <section id ="about">
             <h2>About me</h2>
-            <p>my name is Melissa Red Paredes and I am an aspiring game developer. <br><br>I am a first year Computer Programming and Analysis student at Humber Polytechnic and
+            <p>My name is Melissa Red Paredes and I am an aspiring game developer. <br><br>I am a first year Computer Programming and Analysis student at Humber Polytechnic and
                 I'm so excited to combine creativity and coding to hopefully make fun and engaging gaming experiences.
             My current goal is to master HTML, CSS, and Javascript to create beautiful and exciting websites that deliver a fun user experience.<br><br>
             Outside of school, I love pixel art, watching movies, playing Stardew Valley, and crocheting.
@@ -112,15 +112,15 @@
                 <div class="input-user-container">
                     <div class="name-container">
                         <div class="title-name">NAME:</div>
-                        <input type="text" placeholder="Enter name here">
+                        <input type="text" id="name" placeholder="Enter name here">
                     </div>
                     <div class="email-container">
                         <div class="email-name">EMAIL:</div>
-                        <input type="text" placeholder="Enter email here">
+                        <input type="text" id="email" placeholder="Enter email here">
                     </div>    
                 </div>
                 <div class="message-box">
-                    <textarea class="message-area" placeholder="Write your message here"></textarea>
+                    <textarea class="message-area" id="message" placeholder="Write your message here"></textarea>
                 </div>
                 <button id="submit">SUBMIT</button>
             </div>
@@ -129,5 +129,6 @@
         <footer>
             <h4>Melissa Red Paredes, 2026</h6>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     </body>
 </html>
