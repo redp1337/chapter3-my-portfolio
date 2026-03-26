@@ -57,3 +57,18 @@ submitBtn.addEventListener("click", function(event){
        
     }
 });
+
+//external library typed.js for bonus points
+const typedEffect= new Typed("#typing-text-effect",{
+    strings: [
+        "hi there!",
+        "you look a little lost...",
+        "while you're here, might as well take a look at my portfolio!",
+        "check out some of my projects below!",
+    ],
+    typeSpeed: 60,
+    backSpeed:30,
+    showCursor:true,
+    cursorChar: '|',
+    loop:false
+})
