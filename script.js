@@ -5,7 +5,7 @@ const openProject2= document.getElementById("project-2");
 const pixelDeskPC= document.getElementById("pixel-desk-project");
 
 const recipePC= document.getElementById("recipe-project");
-
+// opens the project window when the 'show details' button is clicked
 openProject1.addEventListener("click",()=>{
     pixelDeskPC.style.display="block";
 });
@@ -13,7 +13,7 @@ openProject1.addEventListener("click",()=>{
 openProject2.addEventListener("click",()=>{
     recipePC.style.display="block";
 });
-
+//closes the project window when the 'x' button is clicked
 const closeProject1= document.getElementById("close-btn-project1");
 const closeProject2= document.getElementById("close-btn-project2");
 
@@ -24,3 +24,36 @@ closeProject1.addEventListener("click", ()=>{
 closeProject2.addEventListener("click", ()=>{
     recipePC.style.display="none";
 })
+//working on functionality of contact form and validation
+
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+
+const messageInput = document.getElementById('message');
+
+const submitBtn = document.getElementById('submit');
+function isValidEmail(email){
+    emailFormat= /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    // allowedDomainEndings=[".com",".ca"];
+    return emailFormat.test(email);
+}
+
+submitBtn.addEventListener("click", function(event){
+    let name= nameInput.value.trim();
+    let email= emailInput.value.trim();
+    let message= messageInput.value.trim();
+    const validDomains=[".com",".ca" ]
+    if (name===''||message===''||email===''){
+        alert('One or more fields are empty, please review submission.');
+        event.preventDefault();
+    }else{
+        if (!isValidEmail(email)){
+            alert("Invalid email address, try again with a new email.")
+            event.preventDefault();
+            return;
+        }else{
+             alert("Contact form submitted!")
+        }
+       
+    }
+});
