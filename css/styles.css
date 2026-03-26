@@ -1,7 +1,6 @@
 html,body{
     justify-content: center;
     align-items:center;
-
 }
 
 @font-face{
@@ -31,7 +30,7 @@ h1{
     font-size: 30px;
     font-family:"daydream";
     font-style: italic;
-    color: #850rgb(0, 0, 0)
+    color: black;
 }
 h2{
     font-size: 20px;
@@ -67,6 +66,7 @@ section{
 }
 main{
     flex:1;
+    width: 80%;
 }
 footer{
     text-align: center;
@@ -104,7 +104,9 @@ font-style: italic;
     text-align: center;
 
 }
-
+#projects{
+    position:relative;
+}
 
 #about, #projects, #contact{
     border:#000000;
@@ -119,9 +121,16 @@ p{
 .projects-container{
     display:flex;
     flex-direction:row;
-    gap: 200px;
+    flex-wrap:wrap;
+    gap: 50px;
     justify-content: center;
     align-items:center;
+    overflow:contain;
+}
+.project img{
+    display:block;
+    margin:0 auto;
+    min-width:200px;
 }
 h6{
     margin-top:-10px;
@@ -147,17 +156,22 @@ h4{
 }
 
 .window{
-    width: 900px;
+    width: 90%;
+    max-width: 900px;
+
     height: fit-content;
     background-color: rgb(182, 182, 182);
     border-color:black;
     border-width: 2px;
     border-style:solid;
-    position: absolute;
-    top: 50%;
+    position:relative;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 5px 5px;
+    flex-wrap:wrap;
+        overflow:contain;
+            overflow-x:scroll;
 }
 .tab-bar{
     font-family:'pixel';
@@ -169,7 +183,7 @@ h4{
     justify-content:space-between;
     border-bottom:1px;
 }
-#close-btn{
+#close-btn-project1,#close-btn-project2{
     border-color:black;
     background-color: gray;
     padding:2px;
@@ -192,12 +206,16 @@ h4{
     overflow-y:scroll;
     max-height: 500px;
     overflow-x:hidden;
-    &::-webkit-scrollbar {
-        display: none;
-    }
     padding:5px;
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    min-width: 100px;
 }
+.gallery img{
+    min-width: 100px;
 
+}
 .description-container{
     margin:10px;
     width: 500px;
@@ -205,4 +223,46 @@ h4{
 .title{
     font-size:20px;
     text-align:center;
+}
+#contact{
+    justify-content:center;
+    align-items:center;
+    margin-bottom:30px;
+}
+.contact-container{
+    width:80%;
+    font-family:'pixel';
+    margin:0 auto;
+}
+.name-container{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    margin-bottom: 10px;
+
+}
+.email-container{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    margin-bottom: 10px;
+
+}
+#submit{
+    font-family:'pixel';
+    background-color:gray;
+    padding:3px;
+    color:white;
+    margin-top:10px;
+}
+#submit:hover{
+    font-family:'pixel';
+    background-color:rgb(23, 0, 231);
+}
+input, textarea{
+    flex-grow:1;
+}
+textarea{
+    width:100%;
+    height:300px;
 }
