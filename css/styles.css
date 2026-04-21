@@ -315,7 +315,29 @@ body.darkMode #name{
     background-color:rgb(129, 0, 194);
     color: rgb(255, 204, 255);
 }
+body.darkMode input::placeholder{
+    background-color:rgb(129, 0, 194);
+    color: rgb(255, 204, 255);
+}
+body.darkMode textarea::placeholder{
+    background-color:rgb(129, 0, 194);
+    color: rgb(255, 204, 255);
+}
+body.darkMode #email{
+    background-color:rgb(129, 0, 194);
+    color: rgb(255, 162, 255);
+}
 body.darkMode textarea{
     background-color:rgb(129, 0, 194);
     color: rgb(255, 204, 255);
+}
+
+header.darkMode{
+    background-color:rgb(0, 1, 33);
+    color:rgb(255, 0, 174);
+}
+
+header.darkMode a{
+    background-color:rgb(0, 1, 33);
+    color:rgb(0, 229, 255);
 }
