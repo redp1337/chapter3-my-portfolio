@@ -1,3 +1,10 @@
+const darkModeToggle = document.getElementById("darkModeButton");
+const header = document.getElementById("header");
+darkModeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("darkMode");
+    header.classList.toggle("darkMode");
+});
+
 const openProject1 = document.getElementById("project-1");
 
 const openProject2= document.getElementById("project-2");
