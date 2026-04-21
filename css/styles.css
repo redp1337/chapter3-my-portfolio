@@ -107,7 +107,7 @@ font-style: italic;
 #about, #projects, #contact{
     border:#000000;
     border-style:solid;
-    border-width: 1px; 
+    border-width: 3px; 
     box-shadow: 10px 10px;
 
 }
@@ -278,4 +278,44 @@ textarea{
 .welcome-message{
     font-family: 'daydream';
     text-align: center;
+}
+
+body.darkMode{
+    background-color:rgb(0, 1, 33);
+    color:rgb(255, 255, 255);
+    border-color: white;
+}
+
+body.darkMode h1{
+    color:rgb(136, 0, 209);
+}
+body.darkMode #typing-text-effect {
+    color:rgb(255, 80, 153);
+}
+body.darkMode h2{
+    color:rgb(136, 0, 209);
+}
+body.darkMode h3{
+    color:rgb(136, 0, 209);
+}
+body.darkMode p{
+    color:rgb(255, 0, 183);
+}
+body.darkMode section {
+    color:rgb(170, 0, 255);
+    border-color: rgb(0, 0, 0);
+    border-style:solid;
+    border-width: 4px;
+}
+body.darkMode button{
+    background-color:rgb(142, 0, 213);
+    color: rgb(255, 204, 255);
+}
+body.darkMode #name{
+    background-color:rgb(129, 0, 194);
+    color: rgb(255, 204, 255);
+}
+body.darkMode textarea{
+    background-color:rgb(129, 0, 194);
+    color: rgb(255, 204, 255);
 }
