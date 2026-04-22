@@ -189,6 +189,18 @@ h4{
     overflow:contain;
     overflow-x:scroll;
     z-index:1234;
+    animation: pop 0.25s ease;
+
+}
+@keyframes pop{
+    from {
+        transform:translate(-50%, -60%) scale(0.9);
+        opacity:0;
+    }
+    to {
+        transform: translate(-50%,-50%) scale(1);
+        opacity:1;
+    }
 }
 .tab-bar{
     font-family:'pixel';
