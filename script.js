@@ -87,7 +87,11 @@ const openProject1 = document.getElementById("project-1");
 
 const openProject2= document.getElementById("project-2");
 
+const openProject3= document.getElementById("project-3");
+
 const pixelDeskPC= document.getElementById("pixel-desk-project");
+
+const portfolioPC= document.getElementById("portfolio-project");
 
 const recipePC= document.getElementById("recipe-project");
 // opens the project window when the 'show details' button is clicked
@@ -98,16 +102,24 @@ openProject1.addEventListener("click",()=>{
 openProject2.addEventListener("click",()=>{
     recipePC.style.display="block";
 });
+
+openProject3.addEventListener("click",()=>{
+    portfolioPC.style.display="block";
+});
 //closes the project window when the 'x' button is clicked
 const closeProject1= document.getElementById("close-btn-project1");
 const closeProject2= document.getElementById("close-btn-project2");
-
+const closeProject3= document.getElementById("close-btn-project3");
 closeProject1.addEventListener("click", ()=>{
     pixelDeskPC.style.display="none";
 })
 
 closeProject2.addEventListener("click", ()=>{
     recipePC.style.display="none";
+})
+
+closeProject3.addEventListener("click", ()=>{
+    portfolioPC.style.display="none";
 })
 //working on functionality of contact form and validation
 

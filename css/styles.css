@@ -155,8 +155,9 @@ h6{
 }
 h4{
     font-family: 'pixel';
-    font-size: 15px;
-    text-align: center
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .click-details{
@@ -164,6 +165,8 @@ h4{
     padding:4px;
     background-color:gray;
     cursor:pointer;
+    font-size:16px;
+    margin-top: -10px;
 }
 
 .click-details:hover{
