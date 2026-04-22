@@ -22,7 +22,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: rgb(255, 255, 255);
+    background-color: #f4f1ea;
 }
 h1{
     text-align:center;
@@ -39,7 +39,7 @@ h2{
     text-align:center;
 }
 header{
-    background-color: rgb(251, 251, 251);
+    background-color: #f4f1ea;
 
     text-align: center;
     padding: 15px;
@@ -108,12 +108,20 @@ font-style: italic;
     border:#000000;
     border-style:solid;
     border-width: 3px; 
-    box-shadow: 10px 10px;
-
+    box-shadow: 5px 5px;
+    
+}
+.stars{
+    margin-bottom:20px;
+    margin-top:0px;
+    color:white;
 }
 p{
-    font-family: 'pixel';
-    font-size:18px;
+    font-family: 'Garamond', serif;
+    font-size:25px;
+    font-weight:bold;
+
+    
 }
 .projects-container{
     display:flex;
@@ -135,7 +143,7 @@ h6{
     font-family:'emoji';
     text-align:center;
     font-size: 30px;
-    margin-bottom:30px;
+    margin-bottom:0px;
     margin-top:0px;
 }
 h4{
@@ -283,7 +291,6 @@ textarea{
 body.darkMode{
     background-color:rgb(0, 1, 33);
     color:rgb(255, 255, 255);
-    border-color: white;
 }
 
 body.darkMode h1{
@@ -291,6 +298,7 @@ body.darkMode h1{
 }
 body.darkMode #typing-text-effect {
     color:rgb(255, 80, 153);
+    opacity: 0.7;
 }
 body.darkMode h2{
     color:rgb(136, 0, 209);
@@ -299,7 +307,7 @@ body.darkMode h3{
     color:rgb(136, 0, 209);
 }
 body.darkMode p{
-    color:rgb(255, 0, 183);
+    color:#d0b2e1;
 }
 body.darkMode section {
     color:rgb(170, 0, 255);
@@ -312,24 +320,23 @@ body.darkMode button{
     color: rgb(255, 204, 255);
 }
 body.darkMode #name{
-    background-color:rgb(129, 0, 194);
+    background-color:rgb(56, 0, 83);
     color: rgb(255, 204, 255);
 }
 body.darkMode input::placeholder{
-    background-color:rgb(129, 0, 194);
     color: rgb(255, 204, 255);
 }
 body.darkMode textarea::placeholder{
-    background-color:rgb(129, 0, 194);
     color: rgb(255, 204, 255);
 }
 body.darkMode #email{
-    background-color:rgb(129, 0, 194);
-    color: rgb(255, 162, 255);
+    background-color:rgb(56, 0, 83);
+    color: rgb(255, 204, 255);
 }
 body.darkMode textarea{
-    background-color:rgb(129, 0, 194);
+    background-color:rgb(56, 0, 83);
     color: rgb(255, 204, 255);
+
 }
 
 header.darkMode{
@@ -340,4 +347,59 @@ header.darkMode{
 header.darkMode a{
     background-color:rgb(0, 1, 33);
     color:rgb(0, 229, 255);
+}
+header.darkMode h6{
+    background-color:rgb(0, 1, 33);
+    color: yellow;
+    opacity: 0.5;
+}
+
+body.darkMode .stars{
+    color: yellow;
+}
+
+body.darkMode footer{
+    color: yellow;
+    background-color:rgb(142, 0, 213);
+}
+
+#starsBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    white-space: pre;
+    font-family: monospace;
+    font-size: 10px;
+    color: white;
+    opacity: 0;
+    z-index: 0;
+}
+
+body.darkMode #starsBackground {
+    opacity: 0.5;
+    color: yellow;
+}
+
+#darkModeButton{
+    position: absolute;
+    right: 20px;
+    margin-left:20px;
+    font-family: 'pixel';
+}
+
+body.darkMode .window{
+    color: rgb(228, 194, 255);
+    box-shadow: none;
+    border-color:white;
+    background-color:rgb(11, 0, 53);
+}
+
+body.darkMode .tab-bar{
+    color: rgb(255, 255, 255);
+    box-shadow: none;
+    border-color:white;
+    background-color:rgb(55, 0, 255);
 }
