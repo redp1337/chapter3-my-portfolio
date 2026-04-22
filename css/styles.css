@@ -1,3 +1,6 @@
+html{
+    scroll-behavior:smooth;
+}
 html,body{
     justify-content: center;
     align-items:center;
@@ -108,8 +111,7 @@ font-style: italic;
     border:#000000;
     border-style:solid;
     border-width: 3px; 
-    box-shadow: 5px 5px;
-    
+     border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
 }
 .stars{
     margin-bottom:20px;
@@ -311,7 +313,7 @@ body.darkMode p{
 }
 body.darkMode section {
     color:rgb(170, 0, 255);
-    border-color: rgb(0, 0, 0);
+    border-color: rgb(155, 0, 198);
     border-style:solid;
     border-width: 4px;
 }
@@ -359,7 +361,7 @@ body.darkMode .stars{
 }
 
 body.darkMode footer{
-    color: yellow;
+    color: rgb(244, 215, 255);
     background-color:rgb(142, 0, 213);
 }
 
